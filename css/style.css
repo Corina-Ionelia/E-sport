@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; /* Removed the erroneous '=' */
+  background-color: #c0c0c0;
+  font-size: 18px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+header {
+  height: 70px;
+  background-color: #121C31;
+  position: fixed;
+  width: 100%;
+  padding-left: 30px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+header a {
+  color: #FFFFFF; /* Set a proper color for text */
+  text-decoration: none; /* Fixed typo 'text-decorection' */
+}
+.page-container {
+	min-height: 100vh; 
+	padding-top: 70px;
+}
+main {
+	margin: 1px 10% 60px 220px;
+	padding: 0px 25px; 
+
+}
+aside {
+	width: 190px;
+	height: 100vh;
+	position: fixed;
+	background: linear-gradient(to bottom, #18243f, #30415d); /* Added missing semicolon */
+	padding-top: 10px;
+	font-size: 20px;
+  }
+  aside a {
+	display: block;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	text-decoration: none; 
+	text-align: center;
+	margin-top: 35px;
+  }
+  aside i {
+	margin-left: 11px; 
+  }
+
+.logo {
+  margin-left: 5px;
+  font-size: 28px;
+  color:  color: #ebe409; /* Set a proper color for text */
+}
+p {
+	 line-height: 150%; 
+}
+.title {
+	border-bottom: 4px solid #ff533d;
+	margin-bottom: 5px; 
+	margin-top: 10px; 
+	display: inline-block; 
+}
