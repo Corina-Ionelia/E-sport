@@ -181,3 +181,7 @@ p {
   height: 250px;
   overflow-y: scroll;
 }
+.contact-list {
+  line-height: 200%;
+  list-style: linear-gradient (#ff533d);
+}
