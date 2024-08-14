@@ -78,11 +78,22 @@ aside a {
 aside i {
   margin-left: 11px;
 }
+aside a:hover {
+  color: #ff533d; /* Schimbă culoarea iconiței la hover */
+  transform: scale(1.1); /* Mărește iconița la hover */
+  transition: all 1s; /* Adaugă o tranziție lină pentru toate proprietățile */
+}
 
 .logo {
   margin-left: 5px;
   font-size: 28px;
   color: #ff533d;
+  transition: all 1s; /*  tranziția este aplicată în mod global */
+}
+
+.logo:hover {
+  color: #ff533d; /* Schimbă culoarea iconiței la hover */
+  transform: scale(1.4); /* Mărește iconița la hover */
 }
 
 p {
