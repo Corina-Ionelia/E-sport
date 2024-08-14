@@ -3,25 +3,26 @@
 * {
   box-sizing: border-box;
 }
+
 /* Custom scrollbar width */
 ::-webkit-scrollbar {
-  width: 6px; /* Lățimea scrollbar-ului */
+  width: 6px;
 }
 
 /* Background-ul scrollbar-ului */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Fundalul pistei scrollbar-ului */
+  background: #f1f1f1;
 }
 
-/* Thumb-ul (bara care se deplasează) scrollbar-ului */
+/* Thumb-ul scrollbar-ului */
 ::-webkit-scrollbar-thumb {
-  background: gray; /* Culoarea thumb-ului */
-  border-radius: 8px; /* Colțuri rotunjite pentru thumb */
+  background: gray;
+  border-radius: 8px;
 }
 
 /* Thumb-ul scrollbar-ului la hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff533d; /* Culoarea thumb-ului când este hover */
+  background: #ff533d;
 }
 
 body {
@@ -81,7 +82,7 @@ aside i {
 .logo {
   margin-left: 5px;
   font-size: 28px;
-  color: #ebe409;
+  color: #ff533d;
 }
 
 p {
@@ -89,8 +90,9 @@ p {
   border-left: 6px solid #ff533d !important;
   padding-left: 12px !important;
 }
+
 .row {
-  overflow: auto;
+  overflow: visible;
 }
 
 [class^="col-"] {
@@ -116,20 +118,19 @@ p {
 .col-60 {
   width: 60%;
 }
-
 .col-70 {
   width: 70%;
 }
 .col-80 {
   width: 80%;
 }
-
 .col-90 {
   width: 90%;
 }
 .col-100 {
   width: 100%;
 }
+
 .title {
   border-bottom: 4px solid #ff533d;
   margin-bottom: 5px;
@@ -166,13 +167,16 @@ p {
   border-radius: 20px;
   transition: all 1s;
 }
+
 .gallery img:hover {
   transform: scale(1.1);
   transition: all 1s;
 }
-. row-event {
+
+.row-event {
   margin-top: 20px;
 }
+
 .event {
   padding: 0px 15px 15px 15px;
   background-color: #d4d4d4;
@@ -181,7 +185,50 @@ p {
   height: 250px;
   overflow-y: scroll;
 }
+
 .contact-list {
-  line-height: 200%;
-  list-style: linear-gradient (#ff533d);
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.contact-list li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ff533d;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.maps {
+  width: 100%;
+  max-width: 480px;
+  height: 322px;
+  border-radius: 25px;
+  border: 2px solid #ff533d;
+}
+
+.centered {
+  text-align: center;
+}
+
+.contact-form {
+  background-color: #ebebeb;
+  border-radius: 25px;
+  border: 2px solid #ff533d;
+  margin-bottom: 15px;
+  max-width: 480px;
+  padding: 5px 15px 30px 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 90%;
+  margin: 15px auto 0px auto;
+  resize: none;
+  font-family: inherit;
+  padding: 3px;
+  font-size: 16px;
 }
