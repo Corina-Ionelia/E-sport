@@ -104,6 +104,10 @@ p {
 
 .row {
   overflow: visible;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* This ensures the elements wrap properly on smaller screens */
 }
 
 [class^="col-"] {
@@ -125,6 +129,8 @@ p {
 }
 .col-50 {
   width: 50%;
+  flex: 1 1 45%; /* This allows each column to take up about 45% of the row's width */
+  margin: 10px;
 }
 .col-60 {
   width: 60%;
@@ -151,7 +157,7 @@ p {
 
 .intro-video {
   display: block;
-  height: 50vh;
+  max-height: 50vh;
   margin: 40px auto;
   max-width: 100%;
   border-radius: 20px;
@@ -175,8 +181,8 @@ p {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  border-radius: 20px;
-  transition: all 1s;
+  border-radius: 10px;
+  transition: all 0.5s;
 }
 
 .gallery img:hover {
@@ -242,4 +248,55 @@ p {
   font-family: inherit;
   padding: 3px;
   font-size: 16px;
+}
+
+.contact-form,
+.maps {
+  max-width: 100%; /* Ensures that the form and map don't exceed their container's width */
+}
+
+#menu-btn {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  right: 25px;
+  top: 23px;
+  display: none;
+}
+
+.show {
+  display: block; !important
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  [class^="col-"] {
+    width: 100%;
+  }
+
+  main {
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  aside {
+    display: none;
+    height: auto;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 25px;
+  }
+
+  .gallery img {
+    width: 130px;
+    height: 130px;
+  }
+
+  #menu-btn {
+    display: block;
+  }
 }
